@@ -1,0 +1,38 @@
+:root {
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --grisOscuro: #666;
+    --grisClaro: #ebebeb;
+    --verde: #39b54a;
+    --tipografia: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--tipografia);
+   
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    padding: 0;
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
