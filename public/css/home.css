@@ -52,7 +52,12 @@
     padding: 10px;
     text-align: center;
 }
-
+.styles_header_nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+}
 .styles_header_nav_banner {
 
     width: 100%;
@@ -191,7 +196,7 @@
 
         flex-direction: row;
 
-        gap: 1px;
+        gap: 15px;
         padding: 0px 0px 10px 10px;
         display: inline-flex;
     }
