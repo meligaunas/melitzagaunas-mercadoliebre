@@ -136,10 +136,9 @@
     right: 10px;
     bottom: 40px;
     text-align: center;
-
-
-
-
+}
+.home__main__section-article-info {
+    margin: 10px;
 }
 
 .home__main__section-article-precio {
@@ -155,12 +154,21 @@
 }
 
 /*El border top dio linea divisoria*/
-.home__main__section-article-nombre {
+
+.home__main__section-article h3{
+    
     font-size: 16px;
     box-sizing: border-box;
     line-height: 30px;
+    height:0;
+    overflow: hidden;
+    transition:all 0.5s ease;
 }
 
+.home__main__section-article:hover h3{
+    display:block;
+    height: 30px;
+}
 
 
 /*Estilo de Footer*/
@@ -239,10 +247,13 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
+      
+        
     }
 }
 
 /*-----MAIN-----*/
+
 
 .home__main__section-article-nombre {
     display: inline;
