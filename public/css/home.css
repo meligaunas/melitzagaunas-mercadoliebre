@@ -5,7 +5,6 @@
 
 
 
-
 /*--HEADER--*/
 .home__body_header {
     background-color: var(--amarillo);
@@ -13,59 +12,69 @@
 
 .home__body_header-encabezado {
     display: flex;
-    flex-direction: row;
-    padding: 10px;
+    align-items: center;
+    padding: 15px 5px 5px 15px;
 }
 
+
 .styles_header_img {
-    padding: 15px;
     width: 50%;
 }
 
 .home__body_header-buscador {
     display: flex;
+    justify-items: baseline;
     align-items: center;
-    flex-basis: 50%;
-
+    width: 50%;
+    margin: 5px;
+    padding-right: 5px;
 }
 
 .home__body_header-buscador-form {
     position: relative;
+    margin: 5px;
 }
 
 .home__body_header-buscador-form input {
-    padding: 15px;
+    padding: 10px 10px 5px 10px;
     border-radius: 5px;
     border: none;
-    width: 80%;
+    width: 95%;
+
 }
 
 .home__body_header-buscador-form__lupa {
     background-color: white;
     padding: 2px;
     position: absolute;
-    right: 10px;
-    top: 14px;
+    right: 9px;
+    top: 8px;
 }
 
-.home__body_header p {
+.home__body_header-compra-cuotas {
+    position: absolute;
+    margin-top: 70px;
     padding: 10px;
     text-align: center;
 }
-.styles_header_nav {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   
-}
-.styles_header_nav_banner {
 
+.styles_header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.styles_header_nav-sections {}
+
+
+.styles_header_nav_banner {
     width: 100%;
 }
 
 
 .burger-menu {
-
     display: flex;
     justify-content: center;
     margin-left: 50%;
@@ -75,8 +84,6 @@
     background-color: var(--celeste);
     color: white;
     font-size: 20px;
-
-
 }
 
 
@@ -92,9 +99,14 @@
 /*Con el background se coloca color a la parte inferior de descripcion*/
 .home__main__section-article {
     width: 100%;
-    padding-top: 10px;
     background-color: white;
-    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: solid 1px #ebebeb;
+    padding: 0px;
+    position: relative;
+    margin-bottom: 5px;
+    color: var(--grisOscuro);
 
 }
 
@@ -109,17 +121,6 @@
     color: var(--grisOscuro);
 }
 
-.home__main__section-article {
-    display: flex;
-    flex-wrap: wrap;
-    border-top: solid 1px #ebebeb;
-    padding: 5px;
-    position: relative;
-    margin: 5px;
-    color: var(--grisOscuro);
-    
-
-}
 
 .home__main__section-article i {
     display: block;
@@ -135,7 +136,7 @@
     right: 10px;
     bottom: 40px;
     text-align: center;
-   
+
 
 
 
@@ -150,14 +151,14 @@
 .home__main__section-article-descuento {
     font-size: 16px;
     color: var(--verde);
-    
+
 }
 
 /*El border top dio linea divisoria*/
 .home__main__section-article-nombre {
     font-size: 16px;
-       box-sizing: border-box;
-       line-height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
 }
 
 
@@ -168,7 +169,7 @@
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
-    color:var(--grisOscuro)
+    color: var(--grisOscuro)
 }
 
 .styles_footer i {
@@ -192,10 +193,39 @@
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
+    .styles_header_img {
+        width: 30%;
+    }
+    .home__body_header-buscador {
+        width: 30%;
+    }
+    .home__body_header-buscador-form input {
+        padding: 0px 0px 0px 0px;
+        border-radius: 0px;
+        border: none;
+        width: 100%;
+    }
+    .home__body_header-buscador-form__lupa {
+        background-color: white;
+        padding: 2px;
+        position: absolute;
+        right: 1px;
+        top: 0px;
+        font-size: smaller;}
+
+        .home__body_header-compra-cuotas {
+        position: relative;
+            padding: 10px 0px 0px 0px;
+            margin-top: 0px;           
+        }
+
+    .styles_header_nav {
+        font-stretch: condensed;
+        padding-bottom: 0px;
+    }
+
     .styles_header_nav ul {
-
         flex-direction: row;
-
         gap: 15px;
         padding: 0px 0px 10px 10px;
         display: inline-flex;
@@ -227,7 +257,8 @@
     }
 
     .styles_header_nav ul {
-        display: block;
+        display: flex;
+        flex-direction: row;
         padding: 0px 0px 10px 10px;
     }
 
@@ -237,12 +268,14 @@
     }
 
     /*-----MAIN-----*/
-    
-    .home__main-articles  {
-        gap:12px;
+
+    .home__main-articles {
+        gap: 12px;
     }
+
     .home__main__section-article i {
-        bottom: 70px;}
+        bottom: 70px;
+    }
 
     .home__main__section-article-nombre {
         display: inline;
@@ -254,9 +287,10 @@
         justify-content: space-between;
         gap: 10px;
     }
-.home__main__section-article-descuento{
-   /*separa el precio del descuento*/
-    margin-inline: 6px;
-}
+
+    .home__main__section-article-descuento {
+        /*separa el precio del descuento*/
+        margin-inline: 6px;
+    }
 
 }
