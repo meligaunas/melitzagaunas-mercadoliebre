@@ -4,7 +4,6 @@
 }
 
 
-
 /*--HEADER--*/
 .home__body_header {
     background-color: var(--amarillo);
@@ -33,6 +32,7 @@
 .home__body_header-buscador-form {
     position: relative;
     margin: 5px;
+    width: 80%;
 }
 
 .home__body_header-buscador-form input {
@@ -40,7 +40,6 @@
     border-radius: 5px;
     border: none;
     width: 95%;
-
 }
 
 .home__body_header-buscador-form__lupa {
@@ -54,8 +53,8 @@
 .home__body_header-compra-cuotas {
     position: absolute;
     margin-top: 70px;
-    padding: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .styles_header_nav {
@@ -66,13 +65,9 @@
     padding-bottom: 10px;
 }
 
-.styles_header_nav-sections {}
-
-
 .styles_header_nav_banner {
     width: 100%;
 }
-
 
 .burger-menu {
     display: flex;
@@ -92,11 +87,8 @@
 }
 
 
-
-
 /*-----Main-----*/
 
-/*Con el background se coloca color a la parte inferior de descripcion*/
 .home__main__section-article {
     width: 100%;
     background-color: white;
@@ -107,7 +99,6 @@
     position: relative;
     margin-bottom: 5px;
     color: var(--grisOscuro);
-
 }
 
 .home__main__section-article img {
@@ -137,6 +128,26 @@
     bottom: 40px;
     text-align: center;
 }
+
+.home__main__section-article i:hover {
+    animation: rotate 1s;
+    transition: all 0.5s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .home__main__section-article-info {
     margin: 10px;
 }
@@ -144,88 +155,91 @@
 .home__main__section-article-precio {
     font-size: 18px;
     width: 45%;
-
 }
 
 .home__main__section-article-descuento {
     font-size: 16px;
     color: var(--verde);
-
 }
 
 /*El border top dio linea divisoria*/
 
-.home__main__section-article h3{
-    
+.home__main__section-article h3 {
+
     font-size: 16px;
     box-sizing: border-box;
     line-height: 30px;
-    height:0;
+    height: 0;
     overflow: hidden;
-    transition:all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.home__main__section-article:hover h3{
-    display:block;
+.home__main__section-article:hover h3 {
+    display: block;
     height: 30px;
 }
 
 
 /*Estilo de Footer*/
 
-.styles_footer {
+.footer {
+    padding: 20px;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: var(--grisOscuro)
+    background-color: #FFF;
 }
 
-.styles_footer i {
+.footer__section {
+    text-align: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.footer i {
     color: var(--celeste);
     margin-top: 50px;
     margin-bottom: 10px;
     font-size: 2em;
 }
 
-.styles_footer_copyright {
-    padding-top: 50px;
-    text-align: left;
-    padding-bottom: 20px;
+.footer_copyright {
     text-align: center;
-
 }
 
 /*-----HEADER-481px----*/
 @media(min-width: 481px) {
-    .home__main__section-article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    .home__main__section-article:hover {
+        box-shadow: 0px 0px 20px rgb(100, 100, 100);
     }
 
     .styles_header_img {
         width: 30%;
     }
+
     .home__body_header-buscador {
         width: 30%;
     }
+
     .home__body_header-buscador-form input {
         padding: 0px 0px 0px 0px;
         border-radius: 0px;
         border: none;
         width: 100%;
     }
+
     .home__body_header-buscador-form__lupa {
         background-color: white;
         padding: 2px;
         position: absolute;
         right: 1px;
         top: 0px;
-        font-size: smaller;}
+        font-size: smaller;
+    }
 
-        .home__body_header-compra-cuotas {
+    .home__body_header-compra-cuotas {
         position: relative;
-            padding: 10px 0px 0px 0px;
-            margin-top: 0px;           
-        }
+        padding: 10px 0px 0px 0px;
+        margin-top: 0px;
+    }
 
     .styles_header_nav {
         font-stretch: condensed;
@@ -247,8 +261,6 @@
         display: flex;
         flex-direction: row;
         gap: 30px;
-      
-        
     }
 }
 
@@ -258,7 +270,6 @@
 .home__main__section-article-nombre {
     display: inline;
 }
-
 
 
 /*-----HEADER-769px----*/
@@ -274,12 +285,11 @@
     }
 
     .burger-menu {
-        /* display: none;*/
-        width: 100%;
+       width: 100%;
     }
 
-    /*-----MAIN-----*/
 
+    /*-----MAIN-----*/
     .home__main-articles {
         gap: 12px;
     }
@@ -304,4 +314,21 @@
         margin-inline: 6px;
     }
 
+    /*-----FOOTER----*/
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .footer__section {
+        width: 30%;
+    }
+
+    .footer_copyright {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
 }

@@ -2,38 +2,43 @@
     padding-top: 12px;
 }
 
-.card{ background-color: hsl(0, 2%, 87%);
-   }
-.form-label{
+.card {
+    background-color: hsl(0, 2%, 87%);
+}
+
+.form-label {
     font-weight: bold;
 }
-.button{
-   display: flex;
-   justify-content: center;
-   background-color: blue;
-  margin-bottom: 15px;
- 
+
+.button {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    margin-bottom: 15px;
 }
-.styles_footer{
-margin: 0;
+
+.styles_footer {
+    margin: 0;
     background-color: white;
 }
-.styles_footer p{
+
+.styles_footer p {
     margin: 20px;
     font-size: x-small;
 }
-.styles_footer h3{
+
+.footer h3 {
     font-size: medium;
     font-weight: bold;
 }
 
-@media(min-width: 481px) { 
-.login__body_header-buscador-form input {    
-  
-    width: 100%;}}
-
-    .login__body_header-buscador-form__lupa {
-
-        position: relative;
-        bottom: 23%;
+@media(min-width: 481px) {
+    .login__body_header-buscador-form input {
+        width: 100%;
     }
+}
+
+.login__body_header-buscador-form__lupa {
+    position: relative;
+    bottom: 23%;
+}
